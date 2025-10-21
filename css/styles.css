@@ -1,0 +1,161 @@
+/* ========================================
+   GLOBAL STYLES - Apply to entire page
+   ======================================== */
+
+/* Body: Sets defaults for the entire webpage */
+body {
+    font-family: Arial, Helvetica, sans-serif;  /* Font for all text */
+    margin: 0;                                   /* Remove browser default spacing */
+    color: #0f172a;                             /* Dark text color */
+    background: #ffffff;                         /* White background */
+}
+
+/* Header: Blue banner at top with name */
+#site-header {
+    padding: 32px 24px;                        /* Space inside header */
+    background: #eef2ff;                       /* Light blue background */
+    border-bottom: 1px solid #b8d0ee;         /* Line below header */
+}
+
+/* Main title (h1) inside header */
+#site-header h1 {
+    margin: 0 0 4px 0;                         /* Remove default margin, small bottom space */
+}
+
+/* Subtitle text styling */
+.role {
+    margin: 0;                                 /* Remove default margin */
+    color: #475569;                           /* Slightly gray text */
+}
+
+/* ========================================
+   LAYOUT STRUCTURE
+   ======================================== */
+
+/* Main container: Centers content and limits width */
+#page {
+    max-width: 980px;                          /* Don't get too wide on large screens */
+    margin: 24px auto;                         /* Center horizontally with auto margins */
+    padding: 0 16px;                           /* Space on left/right sides */
+}
+
+/* Photo section: Centers profile photo at top */
+#left {
+    display: block;                            /* Stack vertically (not side-by-side) */
+    width: 100%;                               /* Take full width */
+    text-align: center;                        /* Center the photo */
+    margin-bottom: 30px;                       /* Space below photo */
+}
+
+/* Content section: Contains all the cards */
+#right {
+    display: block;                            /* Stack vertically */
+    width: 100%;                               /* Take full width */
+    margin-left: 0;                            /* No left spacing needed */
+}
+
+/* ========================================
+   PROFILE PHOTO STYLING
+   ======================================== */
+
+/* Profile photo: Centered and professional looking */
+#left .avatar {
+    display: block;                            /* Makes image a block element */
+    width: 100%;                               /* Responsive width */
+    max-width: 400px;                          /* But not too big */
+    height: auto;                              /* Keeps photo proportions */
+    border-radius: 8px;                        /* Rounded corners */
+    background: #0e0f0f;                       /* Backup color if image fails */
+    border: 3px solid #ffffff;                 /* White border around photo */
+    box-shadow: 0 4px 12px rgba(44, 33, 33, 0.15); /* Drop shadow for depth */
+    margin: 0 auto;                            /* Centers horizontally */
+}
+
+/* First card spacing (if needed) */
+#left .card:first-of-type {
+    margin-top: 12px;                          /* Space above first card */
+}
+
+/* ========================================
+   CONTENT CARDS - Info boxes
+   ======================================== */
+
+/* Card container: Creates neat boxes for content */
+.card {
+    border: 1px solid #e5e7eb;                 /* Light gray border */
+    padding: 20px;                             /* Space inside each card */
+    margin: 20px 0;                            /* Space between cards */
+    background: #ffffff;                        /* White background */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    border-radius: 8px;                        /* Rounded corners */
+    min-height: 150px;                         /* All cards same minimum height */
+    display: flex;                             /* Flexible layout */
+    flex-direction: column;                    /* Stack content top to bottom */
+}
+
+/* Card headings: Section titles like "Contact", "About" */
+.card h2 {
+    margin: 0 0 12px 0;                        /* Space below heading */
+    color: #111827;                            /* Dark text */
+    font-size: 18px;                           /* Consistent size */
+}
+
+/* Card text content: Paragraphs and list items */
+.card p,
+.card li,
+.card small {
+    color: #042d6b;                            /* Blue text color */
+    flex-grow: 1;                              /* Expands to fill available space */
+}
+
+/* Lists inside cards: Contact info, skills, etc. */
+.card ul {
+    margin: 0;                                 /* Remove default spacing */
+    padding-left: 40px;                       /* Indent for bullet points */
+    flex-grow: 1;                              /* Expands to fill space */
+}
+
+/* List items: Individual contact details, skills */
+.card li {
+    margin: 5px 0;                             /* Space between list items */
+    line-height: 1.5;                          /* Better text readability */
+}
+
+/* ========================================
+   TYPOGRAPHY - Text styling
+   ======================================== */
+
+/* Main heading: Your name at the top */
+h1 {
+    font-size: 32px;                           /* Large text for main title */
+    color: #0a0c11;                            /* Very dark text */
+}
+
+/* Section headings: "Contact", "About", "Skills" */
+h2 {
+    font-size: 20px;                           /* Medium size for sections */
+}
+
+/* Paragraphs: Main text content */
+p {
+    font-size: 16px;                           /* Standard readable size */
+    line-height: 1.6;                          /* Space between lines for readability */
+}
+
+/* List items: Contact info, skills, etc. */
+li {
+    margin: 4px 0;                             /* Small space between items */
+}
+
+/* ========================================
+   FOOTER - Bottom of page
+   ======================================== */
+
+/* Footer: Copyright and legal info */
+#site-footer {
+    text-align: center;                        /* Center the copyright text */
+    padding: 20px;                             /* Space inside footer */
+    border-top: 1px solid #e5e7eb;            /* Line above footer */
+    color: #64748b;                            /* Gray text */
+    margin-top: 32px;                          /* Space above footer */
+}

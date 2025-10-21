@@ -1,0 +1,75 @@
+<!--Practice Bio Page for your Mini Project that start with the typical html 5 document declaration-->
+<!DOCTYPE HTML>
+<!-- Root html element meant to be a container around all other content-->
+<html lang="en">
+<!--Head section meant to contain metadata about the document
+which is hidden to user and important for browsers like css links, viewport settings
+page title or character encoding -->
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="./css/styles.css">
+  <title>Liam Maric - Student Bio</title>
+</head>
+
+<!-- Body Section contains all the content a user will interact with and there is typical one -->
+
+<body>
+  <header id="site-header">
+    <h1>Liam Maric</h1>
+    <p class="role">Aspiring Fullstack Developer</p>
+  </header>
+
+  <!-- Main content area  that contains the most of the main content divided in <section> tags -->
+  <main id="page">
+    <section id="left">
+      <img src="./assets/images/Profile Photo.jpeg" alt="Profile Photo Of Liam Maric" class="avatar" />
+    </section>
+
+    <!--Section 3 that contains the contact info the about me section, and skills under the profile photo-->
+    <section id="right">
+      <div class="card">
+        <h2>Contact information</h2>
+        <ul>
+          <li>Email: liam.maric@example.com</li>
+          <li>Phone: (123) 456-7890</li>
+          <li>LinkedIn: <a href="https://www.linkedin.com/in/liam-maric-11a0a3a3/" target="_blank"
+              rel="noopener noreferrer">
+              LinkedIn Profile</a></li>
+          <li>GitHub: <a href="https://github.com/liammaric" target="_blank" rel="noopener noreferrer">
+              GitHub Profile</a></li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2>About Me</h2>
+        <p>
+          My name is Liam Maric and I am a geologist trying to learn new coding skills.
+          My work primarily revolves around the quality control and analysis of hyperspectral
+          and XRF data. My goal is to develop skills of a Fullstack Developer so that I can help
+          automate and streamline data processing tasks in my current field.
+        </p>
+      </div>
+
+      <div class="card">
+        <h2>Skills</h2>
+        <ul>
+          <li>HTML (learning)</li>
+          <li>CSS (learning)</li>
+          <li>JavaScript (learning)</li>
+          <li>Git & GitHub (learning)</li>
+          <li>Node.js (learning)</li>
+          <li>React (learning)</li>
+          <li>Python (basic)</li>
+          <li>Data Analysis (intermediate)</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+</body>
+
+<footer id="site-footer">
+  <p>&copy; 2025 Liam Maric. All rights reserved.</p>
+</footer>
+</html>
